@@ -1,0 +1,49 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
+Window = Library.Main("Gato's Free Edition Farm","LeftShift") -- change "LeftAlt" to key that you want will hide gui
+
+-- tab
+
+local Tab = Window.NewTab("The Farm")
+local Section = Tab.NewSection("(Undetectable)")
+local Button = Section.NewButton("Start Farm",function()
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Op slap farm, Dont leak!";
+ Text = "Made by elgato on discord!";
+ Icon = "";
+ Duration = 100;
+ Button1 = "W";
+ Callback = NotificationBindable;
+})
+
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Loaded Antilag (Works with some devices)";
+ Text = "Enjoy!";
+ Icon = "";
+ Duration = 100;
+ Button1 = "W";
+ Callback = NotificationBindable;
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/GatosFarmFree/refs/heads/main/Dang"))()
+end)
